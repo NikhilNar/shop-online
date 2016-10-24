@@ -1,1 +1,4 @@
+The project was built using codeigniter,AngularJS,Bootstrap,CSS3,Javascript,HTML5.
+The data for the portal is accessed via Amazon API and a RESTful API is created using codeigniter.
+The interactive front end design was developed using AngularJS and Bootstrap.
 
