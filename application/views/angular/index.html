@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" ng-app="my_amazon">
+<head>
+    <meta charset="utf-8">
+    <!--It will ask IE to render with latest version engine-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <!--ViewPort will tell that the layout is specifically designed for mobiles and the font size and size of the page should not decrease-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My HTML File</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/js/jquery-2.1.4.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="lib/js/angular.min.js"></script>
+    <script src="lib/js/angular-route.min.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div ng-include="'partials/include/header.html'" class="header"></div>
+    <div class="clear-navbar-fixed-margin"></div>
+    <div class="view" ng-view></div>
+    <div class="loader" ng-controller="LoaderController as loader" ng-show="loader.isViewLoading">
+        <img src="images/Preloader_3/Preloader_3.gif" id="loader">
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

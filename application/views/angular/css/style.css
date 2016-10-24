@@ -1,0 +1,35 @@
+
+#loader{
+    position: fixed;
+    top: 50%;
+    left:50%;
+}
+
+.product-list div{
+    text-align: center;
+}
+
+.display-image{
+    height:160px;
+    width:160px;
+    margin:0 auto;
+}
+
+
+.loader{
+    background-color: transparent;
+}
+
+.clear-navbar-fixed-margin{
+    width:100%;
+    height:60px;
+}
+
+.product-content{
+    height: 25ss0px;
+    overflow: auto;
+}
+
+.main-container{
+    height:600px;
+}

@@ -1,0 +1,56 @@
+ <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" ng-controller="HeaderInfoController as headerInfoCtrl">
+	 <div class="container">
+		  <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-haspopup="true" aria-expanded="false">
+				  <span class="sr-only">Toggle navigation</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#">Mokart</a>
+		  </div>
+
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <form class="navbar-form navbar-left" role="search" ng-submit="headerInfoCtrl.submitForm()">
+
+				  <div class="form-group" >
+					  <div class="input-group">
+						  <div class="input-group-btn select-opt">
+
+							  <select  ng-model="headerInfoCtrl.dropDownValue.category" class="input-group-addon " id="category"  name="category">
+								  <option  value="All">All</option>
+								  <option  value="Baby">Baby</option>
+								  <option  value="Books">Books</option>
+								  <option  value="DVD">DVD</option>
+								  <option  value="Electronics">Electronics</option>
+								  <option   value="HomeGarden">Home Garden</option>
+								  <option   value="Jewelry">Jewelery</option>
+								  <option   value="PCHardware">PC Hardware</option>
+								  <option   value="Toys">Toys</option>
+								  <option   value="Watches">Watches</option>
+								  </select>
+						  </div><!-- /btn-group -->
+						  <input  class="form-control" aria-label="..."  ng-model="headerInfoCtrl.model.textSearch">
+						  <i class="glyphicon glyphicon-search form-control-feedback"></i>
+					  </div>
+				  </div>
+				  <button type="submit" class="btn btn-default">Search</button>
+			  </form>
+			  <ul class="nav navbar-right navbar-nav nav-pills">
+				  <li class="active">
+					  <a class="btn" id="shakeCart" data-toggle="modal" href="#cartModal"  >
+						  <i class="glyphicon glyphicon-shopping-cart"></i>
+						  Cart<span class="badge">20</span>
+					  </a>
+				  </li>
+				  <li>
+					  <a class="btn" >Sign In</a>
+				  </li>
+			  </ul>
+
+		  </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+
+  </nav>
